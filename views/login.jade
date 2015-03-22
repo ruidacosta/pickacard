@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title= title
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+		link(rel='stylesheet', href='/stylesheets/loginStyle.css')
+		script(src='/javascripts/jquery.min.js')
+		script(src='/javascripts/bootstrap.min.js')
+	body
+		#loginModal.modal.show(tabindex='-1', role='dialog', aria-hidden='true')
+			.modal-dialog
+				.modal-content
+					if error
+						.alert.alert-danger.alert-error
+							strong Error:
+							| #{error}
+							| A problem has been occurred while submitting your data.
+					.modal-body
+						form.form.col-md-12.center-block(method='Post',action='/login/validator')
+							.form-group
+								input.form-control.input-lg(placeholder='Username', type='text', name='user')
+							.form-group
+								input.form-control.input-lg(placeholder='Password', type='password', name='pass')
+							.form-group
+								button.btn.btn-primary.btn-lg.btn-block(id='Signin') Sign In
+					.modal-footer

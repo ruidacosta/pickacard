@@ -1,0 +1,32 @@
+body{
+    background-color: #008B45;
+}
+    
+.bs-example{
+    margin: 20px;
+}
+
+.card{
+    margin: 20px;
+}
+
+.dot{
+	position: relative;
+	top: -5000;
+	left: -5000;
+}
+
+.chatArea{
+	border: 1px solid #aaa;
+	width: 500px;
+	height: 400px;
+	overflow:auto;
+}
+
+#playboard{
+    /*text-align: center;*/
+}
+
+#menu{
+	vertical-align: top;
+}

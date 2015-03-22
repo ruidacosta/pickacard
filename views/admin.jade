@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title= title
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+		link(rel='stylesheet', href='/stylesheets/loginStyle.css')
+		script(src='/javascripts/jquery.min.js')
+		script(src='/javascripts/bootstrap.min.js')
+	body
+		form(method='Post',action='/admin/save')
+			input(placeholder='Username', type='text', name='user')
+			input(placeholder='Password', type='password', name='pass')
+			button(id='Signin') Save
+		

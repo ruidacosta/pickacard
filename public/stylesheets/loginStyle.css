@@ -1,0 +1,11 @@
+body {
+	background-color: #008B45;
+	/*
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	*/
+}
+
+.modal-footer {
+	border-top: 0px;
+}

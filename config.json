@@ -1,0 +1,11 @@
+{
+	"server" : 
+	{
+		"port" : 3069
+	},
+	"db" :
+	{
+		"host" : "localhost",
+		"dbname" : "pickacard"
+	}
+}

@@ -1,0 +1,53 @@
+extends layout
+
+block content
+	.all
+		table(border='1', width='100%')
+			tr
+				td
+					#playboard
+						table(border='1',width='100%')
+							tr
+								each cardId in ['card1','card2','card3','card4','card5']
+									td
+										.card
+											img(id=cardId, src='/images/back.png')
+							tr
+								each cardId in ['card6','card7','card8','card9','card10']
+									td
+										.card
+											img(id=cardId, src='/images/back.png')
+				td(id='menu', width='20%')
+					.bs-example
+						.panel.panel-default
+							.panel-heading This Page is disabled
+							.panel-body 
+								| This is temporarily disabled by the site administrator for some reason.
+								br
+								a(href='#') Click here
+								|  to enable the page.
+							.bs-example
+								.list-group
+									.list-group-item
+										span.glyphicon.glyphicon-piggy-bank 
+										| Pictures
+										span.badge Bank
+									.list-group-item
+										span.glyphicon.glyphicon-file
+										| Documents
+										span.badge
+									.list-group-item
+										span.glyphicon.glyphicon-music
+										| Music
+										span.badge
+									.list-group-item
+										span.glyphicon.glyphicon-film
+										| Videos
+										span.badge
+					.bs-example
+						.panel.panel-default
+							.panel-heading
+							.panel-body
+								#chatArea Rui Costa says: Olá a todos!!!!
+								input(type='text', value='Write you text here.')
+								button(onclick='') Send
