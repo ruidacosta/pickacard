@@ -1,2 +1,2 @@
 # pickacard
-A simple betting card game.
+A simple gambling card game.
